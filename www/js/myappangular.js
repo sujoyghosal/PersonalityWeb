@@ -18,7 +18,7 @@ app.controller('myCtrl', function($scope, $http) {
         if (!$scope.text || $scope.text.length < 100) {
             $scope.LOL = true;
         }
-        alert('Making API Call');
+        //alert('Making API Call');
         $http({
             method: "GET",
             url: URL + '?text=' + $scope.text
